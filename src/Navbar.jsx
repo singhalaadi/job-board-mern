@@ -2,7 +2,7 @@ import './Navbar.css';
 function Navbar(){
     return(
         <nav className="navbar">
-            <h1>Job Board</h1>
+            <img src="./src/assets/logo.svg"></img>
             <ul className="links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/create">New Job</a></li>
