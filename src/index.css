@@ -1,23 +1,159 @@
+:root {
+  --primary-500: #645cff;
+  --text-secondary-color: #888;
+  --fluid-width: 90vw;
+  --max-width: 1170px;
+  --nav-height: 6rem;
+  --letter-spacing: 0.1rem;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family:'Arial',sans-serif;
-  margin:0;
-  padding:0;
-  background-color: #f4f4f4;
-  color:#333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f0f4f8;
+  color: #222;
 }
 
-h1,h2,h3 {
-  color:#007bff;
+ul {
+  list-style-type: none;
 }
 
-button {
-  background-color:#007bff;
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary-color);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.btn {
+  cursor: pointer;
   color: white;
-  padding:10 px 20 px;
-  border: none;
-  cursor:pointer;
+  background: var(--primary-500);
+  border: transparent;
+  border-radius: 0.25rem;
+  letter-spacing: var(--letter-spacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+  font-size: 0.875rem;
+  margin: 5px;
 }
 
-button:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background: #4943e6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.form {
+  background: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+  max-width: var(--fluid-width);
+  max-width: 500px;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  background: #f0f4f8;
+  border: 1px solid #f0f4f8;
+}
+
+.form-row button {
+  margin-top: 1rem;
+}
+
+.form-alert {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  color: green;
 }

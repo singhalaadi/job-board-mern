@@ -1,16 +1,11 @@
-import Navbar from '../Navbar';
-import Home from './Home';
-
-function HomeLayout() {
+import { Outlet } from "react-router-dom";
+// import { Navbar } from "../components";
+const HomeLayout = () => {
   return (
     <>
-      <Navbar />
-      <Home 
-        title="Welcome to JOBIFY!"
-        description="Find and apply to your dream tech job today."
-      />
+      {/* <Navbar /> */}
+      <Outlet />
     </>
   );
-}
-
+};
 export default HomeLayout;
