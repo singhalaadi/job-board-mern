@@ -1,9 +1,9 @@
 :root {
   --primary-500: #645cff;
   --text-secondary-color: #888;
-  --fluid-width: 90vw;
+  --fluid-width: 98vw;
   --max-width: 1170px;
-  --nav-height: 6rem;
+  --nav-height: 4rem;
   --letter-spacing: 0.1rem;
 }
 
@@ -30,10 +30,10 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   width: 100%;
   display: block;
-}
+} */
 
 h1,
 h2,
@@ -42,7 +42,8 @@ h4 {
   letter-spacing: var(--letter-spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
+  margin-top: 0.85rem;
 }
 
 h1 {
@@ -118,10 +119,11 @@ p {
   background: white;
   border-radius: 0.25rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  padding: 2rem 2.5rem;
+  padding: 2rem 3rem;
   margin: 3rem auto;
+  width: 90vw;
   max-width: var(--fluid-width);
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .form-row {
@@ -147,6 +149,36 @@ p {
 
 .form-row button {
   margin-top: 1rem;
+}
+
+/* Password toggle button styles */
+.password-toggle-btn {
+  position: absolute;
+  right: 5px;
+  top: 70%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0 6px;
+  z-index: 2;
+}
+
+.password-toggle-btn:focus {
+  outline: none;
+  color: var(--primary-500);
+}
+
+.password-toggle-btn:hover {
+  color: var(--primary-500);
+}
+
+/* For the wrapper around the password input and toggle button */
+.password-input-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 .form-alert {

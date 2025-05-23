@@ -15,10 +15,7 @@ const Landing = () => {
             job <span>tracking</span> app
           </h1>
           <p>
-            I'm baby wayfarers hoodie next level taiyaki brooklyn cliche blue
-            bottle single-origin coffee chia. Aesthetic post-ironic venmo,
-            quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch
-            narwhal.
+            Effortlessly manage your job applications, interviews, and offers in one place. Stay organized and take control of your tech career journey with Jobify. Track your progress, set reminders, and never miss an opportunity again!
           </p>
           <Link to="/register" className="btn register-link">
             Register
@@ -33,13 +30,13 @@ const Landing = () => {
   );
 };
 const StyledWrapper = styled.section`
-   nav {
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-  } 
+  nav {
+    height: var(--nav-height);
+    width: var(--fluid-width);
+    margin: 20px;
+  }
   .page {
-    min-height: calc(100vh - var(--nav-height));
+    min-height: calc(90vh - var(--nav-height));
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 400px;
