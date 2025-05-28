@@ -23,6 +23,9 @@ const Landing = () => {
           <Link to="/login" className="btn">
             Login / Demo User
           </Link>
+          <Link to="/dashboard" className="btn">
+            Go to Dashboard
+          </Link>
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>

@@ -1,15 +1,24 @@
-import React from 'react';
- import styled from 'styled-components';
- const BigSidebar = () => {
+import NavLinks from "./NavLinks";
+import Logo from "../components/Logo";
+import Wrapper from "../assets/wrappers/BigSidebar";
+import { useDashboardContext } from "../pages/dashboardContext";
+const BigSidebar = () => {
+  const { showSidebar } = useDashboardContext();
   return (
     <Wrapper>
-      <h1>Big Sidebar</h1>
+      <div
+        className={
+          showSidebar ? "sidebar-container " : "sidebar-container show-sidebar"
+        }
+      >
+        <div className="content">
+          <header>
+            <Logo />
+          </header>
+          <NavLinks isBigSidebar />
+        </div>
+      </div>
     </Wrapper>
   );
- };
- const Wrapper = styled.aside`
-  background-color: #f0f0f0;
-  width: 20rem;
-  padding: 2rem;
- `;
- export default BigSidebar;
+};
+export default BigSidebar;
