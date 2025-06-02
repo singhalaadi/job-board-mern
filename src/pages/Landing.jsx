@@ -23,9 +23,6 @@ const Landing = () => {
           <Link to="/login" className="btn">
             Login / Demo User
           </Link>
-          <Link to="/dashboard" className="btn">
-            Go to Dashboard
-          </Link>
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
@@ -71,6 +68,8 @@ const StyledWrapper = styled.section`
     padding: 12px 24px;
     margin: 5px;
     font-size: 1rem;
+    text-decoration: none;
+    color: white;
   }
   @media (max-width: 991px) {
     .page {

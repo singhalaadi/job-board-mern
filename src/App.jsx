@@ -5,12 +5,12 @@ import {
   Register,
   Login,
   DashboardLayout,
-  Error
-//   AddJob,
-//   AllJobs,
-//   Profile,
-//   Admin,
-//   Stats,
+  Error,
+  AddJob,
+  AllJobs,
+  Profile,
+  Admin,
+  Stats,
 } from "./pages";
 
 const checkDefaultTheme = () => {
@@ -40,26 +40,26 @@ const router = createBrowserRouter([
       },
       {
         path: "dashboard",
-        element: <DashboardLayout isDarkThemeEnabled={isDarkThemeEnabled} />
-        // children: [
-        //   {
-        //     index: true,
-        //     element: <AddJob />,
-        //   },
-        //   { path: "stats", element: <Stats /> },
-        //   {
-        //     path: "all-jobs",
-        //     element: <AllJobs />,
-        //   },
-        //   {
-        //     path: "profile",
-        //     element: <Profile />,
-        //   },
-        //   {
-        //     path: "admin",
-        //     element: <Admin />,
-        //   },
-        // ],
+        element: <DashboardLayout isDarkThemeEnabled={isDarkThemeEnabled} />,
+        children: [
+          {
+            index: true,
+            element: <AddJob />,
+          },
+          { path: "stats", element: <Stats /> },
+          {
+            path: "all-jobs",
+            element: <AllJobs />,
+          },
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+          {
+            path: "admin",
+            element: <Admin />,
+          },
+        ],
       }
     ]
   }
