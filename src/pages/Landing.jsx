@@ -33,7 +33,8 @@ const StyledWrapper = styled.section`
   nav {
     height: var(--nav-height);
     width: var(--fluid-width);
-    margin: 20px;
+    margin-top: 1.5rem;
+    margin-left: 6rem;
   }
   .page {
     min-height: calc(90vh - var(--nav-height));
@@ -42,6 +43,7 @@ const StyledWrapper = styled.section`
     grid-template-columns: 1fr 400px;
     column-gap: 3rem;
     padding: 0 60px;
+    margin-left: 4rem;  
   }
   h1 {
     font-weight: 700;

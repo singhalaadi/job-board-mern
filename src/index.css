@@ -1,9 +1,10 @@
 :root {
   --primary-500: #49b5d0;
+  --text-color: #000000;
   --text-secondary-color: #888;
-  --fluid-width: 98vw;
+  --fluid-width: 90vw;
   --max-width: 1170px;
-  --nav-height: 4rem;
+  --nav-height: 5rem; 
   --letter-spacing: 0.1rem;
 
   /* DARK MODE */
